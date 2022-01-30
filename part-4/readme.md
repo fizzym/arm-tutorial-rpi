@@ -152,7 +152,7 @@ registers in a Fast Interrupt service routine.
 Providing interrupt handlers can be a bit tricky. It's generally entirely non-portable and you'll
 have to read the manual for your toolchain in order to understand how to write them. This
 generally involves informing the compiler that a function you declare should be used to handle a
-type of interrupt. The toolchain can them fill the vector table with the necessary information.
+type of interrupt. The toolchain can then fill the vector table with the necessary information.
 The vector table is usually present in the linker script which defines the memory layout of the
 target device. because normally these vectors are read-only.
 
