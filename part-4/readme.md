@@ -154,7 +154,7 @@ have to read the manual for your toolchain in order to understand how to write t
 generally involves informing the compiler that a function you declare should be used to handle a
 type of interrupt. The toolchain can then fill the vector table with the necessary information.
 The vector table is usually present in the linker script which defines the memory layout of the
-target device. because normally these vectors are read-only.
+target device because normally these vectors are read-only.
 
 For gcc and ld we can look at the gcc manual on function attributes relating to ARM.
 [https://gcc.gnu.org/onlinedocs/gcc/Function-Attributes.html](https://gcc.gnu.org/onlinedocs/gcc/Function-Attributes.html)
