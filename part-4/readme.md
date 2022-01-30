@@ -213,7 +213,7 @@ Essentially you end up with a large switch structure inside the interrupt handle
 course call other functions from the interrupt handler, but again think about the cost of the
 prologue and epilogue before you do!
 
-When the raspberry-pi starts running our code, as we've discovered earlier in the turotials it
+When the raspberry-pi starts running our code, as we've discovered earlier in the tutorials it
 loads the code from the SD card to RAM at address 0x00008000 and then starts executing the code.
 So how can we possibly code the vector table and get the correct jump instructions into the
 vector table?
