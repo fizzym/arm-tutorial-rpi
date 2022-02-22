@@ -255,8 +255,7 @@ There are only a few assembler instructions here, so don't panic! The labels ref
 that have been implemented with the correct attributes for each exception type. See the file
 `rpi-interrupts.c` to see these C functions.
 
-The loading of addresses to a register with LDR is documented in the [ARM Software Development Toolkit Reference Guide]()
-(https://developer.arm.com/documentation/dui0041/c/Babbfdih)
+The loading of addresses to a register with LDR is documented in the [ARM Software Development Toolkit Reference Guide](https://developer.arm.com/documentation/dui0041/c/Babbfdih)
 For other information see [here](https://developer.arm.com/documentation/100070/0612/accessing-and-managing-symbols-with-armlink/region-related-symbols/methods-of-importing-linker-defined-symbols-in-arm-assembly-language?lang=en).
 
 _reset_ and undefined_instruction_vector, etc. are the labels used as the function addresses. So
