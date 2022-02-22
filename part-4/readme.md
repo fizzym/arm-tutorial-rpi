@@ -270,7 +270,7 @@ lets us move 32-bytes, and there are 8 32-bit vectors in our table, so one load 
 instruction later we've moved the whole of our vector table to `0x00000000`.
 
 See the documentation for this on the [ARM Architecture Reference Manual Thumb-2 Supplement](https://developer.arm.com/documentation/ddi0308/d/The-Thumb-Instruction-Set/Instruction-encoding-for-32-bit-Thumb-instructions/Load-and-store-multiple--RFE--and-SRS?lang=en) and also the 
-[Installing the handlers at reset](https://developer.arm.com/documentation/dui0040/d/Handling-Processor-Exceptions/Installing-an-exception-handler/Installing-the-handlers-at-reset?lang=en) in the ARM Software Development Toolkit User Guide.
+[Installing the handlers at reset](https://developer.arm.com/documentation/dui0040/d/Handling-Processor-Exceptions/Installing-an-exception-handler/Installing-the-handlers-at-reset?lang=en) in the ARM Software Development Toolkit User Guide. Finally see Stackoverflow [Help me understand stmdb, ldmia](https://stackoverflow.com/questions/23045702/).
 
 But, before we go too much further, let me show you why this doesn't work!
 
