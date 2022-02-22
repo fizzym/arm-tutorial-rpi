@@ -226,7 +226,7 @@ Let's have a look at what needs to be done to implement the vector table. It's e
 down to assembler to do this. It really could do with being done as the very first thing in our
 code anyway so it's setup right from the start.
 
-Here is some modified assembler for our ```_startup:``` label which is where our linker knows we want
+Here is some modified assembler for our ```_start:``` label which is where our linker knows we want
 to start execution. The linker makes sure this is at the start of our binary.
 
 At fist, I thought this was going to be easy - we just hard-code some values into a table and copy
