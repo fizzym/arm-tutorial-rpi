@@ -213,20 +213,20 @@ Essentially you end up with a large switch structure inside the interrupt handle
 course call other functions from the interrupt handler, but again think about the cost of the
 prologue and epilogue before you do!
 
-When the raspberry-pi starts running our code, as we've discovered earlier in the tutorials it
+When the Raspberry-Pi starts running our code, as we've discovered earlier in the tutorials it
 loads the code from the SD card to RAM at address 0x00008000 and then starts executing the code.
 So how can we possibly code the vector table and get the correct jump instructions into the
 vector table?
 
 Well, everything is in RAM and that's the key - this is read/write memory and in supervisor mode
-we can write to any location we want. So at runtime when our code is being executed we can
-overwrite the vector table at runtime. All we need is a vector table to write.
+we can write to any location we want. So, at runtime, when our code is being executed we can
+overwrite the vector table. All we need is a vector table to write.
 
 Let's have a look at what needs to be done to implement the vector table. It's easiest if we drop
 down to assembler to do this. It really could do with being done as the very first thing in our
 code anyway so it's setup right from the start.
 
-Here is some modified assembler for our _statup: label which is where our linker knows we want
+Here is some modified assembler for our ```_startup:``` label which is where our linker knows we want
 to start execution. The linker makes sure this is at the start of our binary:
 
 At fist, I thought this was going to be easy - we just hard-code some values into a table and copy
