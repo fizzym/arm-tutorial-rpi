@@ -255,8 +255,9 @@ There are only a few assembler instructions here, so don't panic! The labels ref
 that have been implemented with the correct attributes for each exception type. See the file
 `rpi-interrupts.c` to see these C functions.
 
-The Loading of addresses to a register with LDR is documented
-[here](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0473c/Bgbbfgia.html)
+The Loading of addresses to a register with LDR is documented in the
+[Arm Compiler armlink User Guide](https://developer.arm.com/documentation/100070/0612/?lang=en)
+[here](https://developer.arm.com/documentation/100070/0612/accessing-and-managing-symbols-with-armlink/region-related-symbols/methods-of-importing-linker-defined-symbols-in-arm-assembly-language?lang=en).
 
 _reset_ and undefined_instruction_vector, etc. are the labels used as the function addresses. So
 we have a table at the very start of our code. A neat side-effect of having this table right at
@@ -270,7 +271,7 @@ lets us move 32-bytes, and there are 8 32-bit vectors in our table, so one load 
 instruction later we've moved the whole of our vector table to `0x00000000`.
 
 See the documentation for this on the
-[ARM website](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0068b/BABEFCIB.html)
+[ARM Software Development Toolkit User Guide](https://developer.arm.com/documentation/dui0040/d/Handling-Processor-Exceptions/Installing-an-exception-handler/Installing-the-handlers-at-reset?lang=en)
 
 But, before we go too much further, let me show you why this doesn't work!
 
