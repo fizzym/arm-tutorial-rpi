@@ -255,7 +255,7 @@ There are only a few assembler instructions here, so don't panic! The labels ref
 that have been implemented with the correct attributes for each exception type. See the file
 `rpi-interrupts.c` to see these C functions.
 
-The loading of addresses to a register with LDR is documented in the [ARM Software Development Toolkit Reference Guide](https://developer.arm.com/documentation/dui0041/c/Babbfdih)
+The loading of addresses to a register with LDR is documented in the [ARM Software Development Toolkit Reference Guide](https://developer.arm.com/documentation/dui0041/c/Babbfdih). 
 For other information see [here](https://developer.arm.com/documentation/100070/0612/accessing-and-managing-symbols-with-armlink/region-related-symbols/methods-of-importing-linker-defined-symbols-in-arm-assembly-language?lang=en).
 
 _reset_ and undefined_instruction_vector, etc. are the labels used as the function addresses. So
@@ -269,8 +269,8 @@ shifting data about. Each register can load a 4-byte (32-bit) value, so using ei
 lets us move 32-bytes, and there are 8 32-bit vectors in our table, so one load and one store
 instruction later we've moved the whole of our vector table to `0x00000000`.
 
-See the documentation for this on the
-[ARM Software Development Toolkit User Guide](https://developer.arm.com/documentation/dui0040/d/Handling-Processor-Exceptions/Installing-an-exception-handler/Installing-the-handlers-at-reset?lang=en)
+See the documentation for this on the [ARM Architecture Reference Manual Thumb-2 Supplement](https://developer.arm.com/documentation/ddi0308/d/The-Thumb-Instruction-Set/Instruction-encoding-for-32-bit-Thumb-instructions/Load-and-store-multiple--RFE--and-SRS?lang=en) and also the 
+[Installing the handlers at reset](https://developer.arm.com/documentation/dui0040/d/Handling-Processor-Exceptions/Installing-an-exception-handler/Installing-the-handlers-at-reset?lang=en) in the ARM Software Development Toolkit User Guide.
 
 But, before we go too much further, let me show you why this doesn't work!
 
