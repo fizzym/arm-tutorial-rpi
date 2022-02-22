@@ -227,7 +227,7 @@ down to assembler to do this. It really could do with being done as the very fir
 code anyway so it's setup right from the start.
 
 Here is some modified assembler for our ```_startup:``` label which is where our linker knows we want
-to start execution. The linker makes sure this is at the start of our binary:
+to start execution. The linker makes sure this is at the start of our binary.
 
 At fist, I thought this was going to be easy - we just hard-code some values into a table and copy
 that table to the start of RAM where the vector table resides. Here's some initial code:
