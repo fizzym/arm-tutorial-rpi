@@ -18,7 +18,7 @@ The material that's useful:
 
 - [ARM1176JZF-S Technical Reference Manual](http://infocenter.arm.com/help/topic/com.arm.doc.ddi0301h/DDI0301H_arm1176jzfs_r0p7_trm.pdf)
 - [BCM2385 ARM Peripherals](http://www.raspberrypi.org/wp-content/uploads/2012/02/BCM2835-ARM-Peripherals.pdf)
-- [ARMv6 Architecture Reference Manual](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0406c/index.html)
+- [ARMv6 Architecture Reference Manual](https://developer.arm.com/documentation/ddi0419/e/?lang=en)
   This requires agreeing to an NDA to get hold of the PDF version of the document, but it's at
   least free and easy to get! This document also describes the ARMv7 architecture which the Cortex
   A7 uses in the BCM2836 (Raspberry-pi 2)
