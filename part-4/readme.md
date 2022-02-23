@@ -689,12 +689,14 @@ _enable_interrupts:
     mov     pc, lr
 ```
 
- This code is pretty straight forward. Section A1.1.3 of the ARM ARM describes the Status
+ This code is pretty straight forward. Section A1.1.3 of the [ARM ARM]
+ (https://developer.arm.com/documentation/ddi0419/e/?lang=en) describes the Status
  registers in the processor and describes the Current Program Status Register (CPSR). Some
  information is covered in this section and of important note is "The CPSR is accessed with
  special instructions".
 
- Section A2.5 of the ARM ARM describes the format of the CPSR register in more detail and details
+ Section A2.5 of the [ARM ARM](https://developer.arm.com/documentation/ddi0419/e/?lang=en)
+ describes the format of the CPSR register in more detail and details
  the exact layout of the CPSR register.
 
  Section A2.5.6 describes the interrupt disable bits, and that gets us the last bit of information
