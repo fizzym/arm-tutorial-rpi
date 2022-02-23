@@ -689,8 +689,8 @@ _enable_interrupts:
     mov     pc, lr
 ```
 
- This code is pretty straight forward. Section A1.1.3 of the [ARM ARM]
- (https://developer.arm.com/documentation/ddi0419/e/?lang=en) describes the Status
+ This code is pretty straight forward. Section A1.1.3 of the 
+ [ARM ARM](https://developer.arm.com/documentation/ddi0419/e/?lang=en) describes the Status
  registers in the processor and describes the Current Program Status Register (CPSR). Some
  information is covered in this section and of important note is "The CPSR is accessed with
  special instructions".
